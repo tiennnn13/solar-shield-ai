@@ -3,20 +3,16 @@
 <head>
 <meta name="viewport" width="device-width">
  
-
-<link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
-<script defer src="https://pyscript.net/alpha/pyscript.js"></script>
-
   
 
 <title> Solar Shield AI</title>
-<link rel="icon" type="image/x-icon" href="sun.ico">/*my icon*/
+<link rel="icon" type="image/x-icon" href="sun.ico">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
 
 
 <style>
  /*responsive navigator*/
- .navi {z-index:7;list-style-type: none ;padding: 0px;background-color:black; position: fixed; top: 0; width:100%;margin-left: 0% ;height: 53px;padding-right:20px; }
+ .navi {z-index:7;list-style-type: none ;padding: 0px;background-color:black; position: fixed; top: 0; width:100%;margin-left: 0% ;padding-right:20px; }
  .navi-right a {font-size: 20px;font-weight:700; color: white; ;padding: 11px; ;text-decoration: none;text-align: left;display: block;overflow:auto;background-color: #000000;}
  .navi-right a:hover {font-weight: 700;  color:
   #ff523b; border-bottom: solid 1.5px #ff603b ; }
@@ -215,13 +211,17 @@ display: flex;align-items: center;border-bottom: solid 2px #dcdbdb;justify-conte
 
 
  /*contact form*/
- .inputbox{ width: 100%; padding: 6px 6px; color:black;
-  margin: 7px 0; display: inline-block;
-  border:  ;border-radius: 4px;
-  box-sizing: border-box;}
+ .inputbox{ width: 100%;
+    padding: 6px 6px;
+    border-color: #000000bf;
+    margin: 7px 0;
+    display: inline-block;
+    border-width: 2px;
+    border-radius: 4px;
+    box-sizing: border-box;}
 
   .lastpart {position: relative;
-    background-color: white; display: flex; flex-wrap: wrap;
+    background-color: white; display: flex;
   font-size: 15px;justify-content: space-between
   text-align: center;}
 
@@ -474,7 +474,7 @@ function current_slide_by_using_dot(num)
                 <input class='inputbox' name="Province" type="text" placeholder="Province" required>
                 <input class='inputbox' name="City" type="text" placeholder="City" required>
                 <input class='inputbox' name="Postal_Code" type="text" placeholder="Postal Code" required>
-      <select class='inputbox' style='color:rgb(162, 162, 162)' id="Level_of_Emergency" name="Level_of_Emergency">
+      <select class='inputbox' style='border-width: 2px;color:rgb(67 66 66 / 82%)' id="Level_of_Emergency" name="Level_of_Emergency">
           <option  value="Level_of_Emergency">--Level of Emergency--</option>
         <option style='color:black' value="Extensive">Extensive</option>
         <option style='color:black' value="Significant">Significant</option>
